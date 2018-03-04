@@ -1,0 +1,23 @@
+{
+  "name": "leafspy-rest-api",
+  "version": "1.0.0",
+  "description": "LeafSpy Rest API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "LeafSpy"
+  ],
+  "author": "Martin Smuts",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.8",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.1"
+  }
+}
