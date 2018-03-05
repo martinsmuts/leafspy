@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 const Trip = require("../../models/trip");
 
-router.get('/', (req, res, next) => {
+/*router.get('/', (req, res, next) => {
     Trip.find()
     .exec()
     .then(docs => {
@@ -23,7 +23,7 @@ router.get('/', (req, res, next) => {
         error: err
       });
     });
-});
+});*/
 
 router.get('/', (req, res, next) => {
     const trip = {
@@ -38,7 +38,7 @@ router.get('/', (req, res, next) => {
         .save()
         .then(result => {
         console.log(result);
-        res.status(201)//.json({message: "Handling POST requests to /trip", createdTrip: result})
+        res.status(201)//.json({message: "Handling get requests to /trip", createdTrip: result})
         ;
         })
         .catch(err => {
