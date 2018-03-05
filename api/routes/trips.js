@@ -25,21 +25,19 @@ router.get('/', (req, res, next) => {
     });
 });
 
-router.post('/', (req, res, next) => {
+router.get('/', (req, res, next) => {
     const trip = {
         _id: new mongoose.Types.ObjectId(),
-        tripId: req.body.tripId,
-        soc: req.body.soc
+        Trip: req.body.Trip,
+        SOC: req.body.SOC
     };
     const tripmongo = new Trip(trip);
     tripmongo
         .save()
         .then(result => {
         console.log(result);
-        res.status(201).json({
-            message: "Handling POST requests to /trip",
-            createdProduct: result
-        });
+        res.status(201)//.json({message: "Handling POST requests to /trip", createdTrip: result})
+        ;
         })
         .catch(err => {
         console.log(err);
