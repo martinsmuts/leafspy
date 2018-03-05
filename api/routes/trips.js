@@ -28,8 +28,10 @@ router.get('/', (req, res, next) => {
 router.get('/', (req, res, next) => {
     const trip = {
         _id: new mongoose.Types.ObjectId(),
-        Trip: req.body.Trip,
-        SOC: req.body.SOC
+        //Trip: req.body.Trip,
+        //SOC: req.body.SOC
+        Trip: req.query.Trip,
+        SOC: req.query.SOC
     };
     const tripmongo = new Trip(trip);
     tripmongo
