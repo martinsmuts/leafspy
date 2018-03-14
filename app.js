@@ -8,7 +8,7 @@ const tripRoutes = require("./api/routes/trips");
 
 
 mongoose.connect(
-    "mongodb://martinsmuts:HuisMuis!123@node-rest-shop-shard-00-00-lz39f.mongodb.net:27017,node-rest-shop-shard-00-01-lz39f.mongodb.net:27017,node-rest-shop-shard-00-02-lz39f.mongodb.net:27017/test?ssl=true&replicaSet=node-rest-shop-shard-0&authSource=admin",
+    "mongodb://username:password@node-rest-shop-shard-00-00-lz39f.mongodb.net:27017,node-rest-shop-shard-00-01-lz39f.mongodb.net:27017,node-rest-shop-shard-00-02-lz39f.mongodb.net:27017/test?ssl=true&replicaSet=node-rest-shop-shard-0&authSource=admin",
     {
       //useMongoClient: true
     }
